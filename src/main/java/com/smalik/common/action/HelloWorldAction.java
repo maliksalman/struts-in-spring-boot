@@ -1,4 +1,4 @@
-package com.mkyong.common.action;
+package com.smalik.common.action;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -8,7 +8,7 @@ import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
 
-import com.mkyong.common.form.HelloWorldForm;
+import com.smalik.common.form.HelloWorldForm;
 
 public class HelloWorldAction extends Action{
 	
@@ -17,6 +17,7 @@ public class HelloWorldAction extends Action{
 		
 		HelloWorldForm helloWorldForm = (HelloWorldForm) form;
 		helloWorldForm.setMessage("Hello World! Struts");
+		request.setAttribute("foo", "bar");
 		
 		return mapping.findForward("success");
 	}

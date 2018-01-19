@@ -7,12 +7,12 @@
 
 	<form-beans>
 		<form-bean name="helloWorldForm" 
-			type="com.mkyong.common.form.HelloWorldForm"/>
+			type="com.smalik.common.form.HelloWorldForm"/>
 	</form-beans>
 
 	<action-mappings>
 		<action path="/helloWorld"
-			type="com.mkyong.common.action.HelloWorldAction"
+			type="com.smalik.common.action.HelloWorldAction"
 			name="helloWorldForm">
 			<forward name="success" path="/HelloWorld.jsp"/>
 			

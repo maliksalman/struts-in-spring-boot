@@ -1,4 +1,4 @@
-package com.mkyong.common.form;
+package com.smalik.common.form;
 
 import org.apache.struts.action.ActionForm;
 
