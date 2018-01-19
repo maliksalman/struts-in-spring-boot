@@ -18,5 +18,9 @@
 			
 		</action>
 	</action-mappings>
+    
+    <controller>
+        <set-property property="processorClass" value="com.smalik.common.CustomProcessor"/>
+    </controller>
 
 </struts-config>

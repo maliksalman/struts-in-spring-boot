@@ -14,7 +14,12 @@ public class StrutsApplication {
     }
 
     @Bean
-    public ServletRegistrationBean strutsServletBean() {
+    public InspirationalBean inspirationalBean() {
+        return new InspirationalBean();
+    }
+
+    @Bean
+    public ServletRegistrationBean actionServlet() {
         ActionServlet servlet = new ActionServlet();
         ServletRegistrationBean bean = new ServletRegistrationBean(servlet, "*.do");
         bean.addInitParameter("config", "/WEB-INF/struts-config.xml");

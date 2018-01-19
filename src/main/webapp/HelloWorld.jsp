@@ -7,6 +7,7 @@
 <body>
 <h1><bean:write name="helloWorldForm" property="message" />
 <div>JSTL object value: ${foo}</div>
+<div>Inspiration message: ${inspiration}</div>
 </h1>
 </body>
 </html>
